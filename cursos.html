@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/stylecursos.css">
+    <title>Accordion</title>
+</head>
+<body>
+    <header>
+        <div class="img-backgroud"></div>
+  
+        <div>
+          <nav class="navbar">
+            <a href="/" class="logo">Logo</a>
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="https://www.utfpr.edu.br/" target="_blank" rel="external"  class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="cursos.html" class="nav-link">Cursos</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link">Cadastro</a></li>
+            </ul>
+            <div class="hamburgue" onclick="handleMenu()">
+              <div class="logo-2"><i class="fa-solid fa-bars" style="color:rgb(255, 255, 255); font-size: 20px;" ></i></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <main>
+        
+        <div id="container">
+            <div class="Title">
+                <h1> Cursos</h1>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Campus Curitiba
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                  <ul>
+                    <li>Administração</li>
+                    <li>Arquitetura e Urbanismo</li>
+                    <li>Comunicação Organizacional</li>
+                    <li>Design</li>
+                    <li>Educação Física</li>
+                    <li>Engenharia Ambiental e Sanitária</li>
+                    <li>Engenharia Civíl</li>
+                    <li>Engenharia de Computação</li>
+                    <li>Engenharia de Controle e Automação</li>
+                    <li>Engenharia Elétrica</li>
+                    <li>Engenharia Eletrônica</li>
+                    <li>Engenharia Mecânica</li>
+                    <li>Engenharia Mecatrônica</li>
+                    <li>Química</li>
+                    <li>Sistemas de Informação</li>
+                    
+                    
+                  </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Campo Mourão
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Engenharia Química</li>
+                        <li>Engenharia Civil</li>
+                        <li>Engenharia Ambiental</li>
+                        <li>Ciência da Computação</li>
+                        <li>Licenciatura Química</li>
+                        <li>Técnico Integrado em Informática</li>
+                    </ul>
+                            
+                    
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Cornélio Procópio
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Tecnologia em Análise e Desenvolvimento de Sistemas</li>
+                        <li>Engenharia Elétrica, Engenharia Mecânica</li>
+                        <li>Engenharia de Computação</li>
+                        <li>Engenharia de Software</li>
+                        <li>Engenharia Eletrônica</li>
+                        <li>Engenharia de Controle</li>
+                         <li>Automação e Licenciatura</li>
+                         <li>Matemática</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Apucarana
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Engenharia Civil</li>
+                         <li>Engenharia de Computação</li>
+                         <li>Engenharia Elétrica</li>
+                         <li>Engenharia Química</li>
+                         <li>Engenharia Têxtil</li>
+                         <li>Design de Moda</li>
+                         <li>Licenciatura em Química</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Dois Vizinhos
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Agronomia</li>
+                        <li>Engenharia Florestal</li>
+                        <li>Bacharelado em Zootecnia</li>
+                        <li>Licenciatura em Ciências Biológicas</li>
+                        <li>Engenharia de Bioprocessos e Biotecnologia</li> 
+                        <li>Bacharelado em Engenharia de Software</li></ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Londrina
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Tecnologia em Alimentos</li>
+                        <li>Engenharia Ambiental</li>
+                        <li>Engenharia de Materiais</li>
+                        <li>Engenharia Mecânica</li>
+                        <li>Engenharia de Produção</li>
+                        <li>Engenharia Química</li> 
+                        <li>Licenciatura em Química</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Medianeira
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Engenharia Elétrica</li>
+                        <li>Engenharia Ambiental</li>
+                        <li>Engenharia de Alimentos</li>
+                        <li>Engenharia de Produção</li>
+                        <li>Bacharelado em Ciência da Computação</li>
+                        <li>Licenciatura em Química</li>
+                        <li>Tecnologia em Alimento</li>s
+                        <li>Tecnologia em Gestão Ambiental</li> 
+                        <li>Tecnologia em Manutenção Industrial</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Santa Helena
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                   <ul>
+                    <li>Licenciatura em Ciências Biológicas</li>
+                    <li>Bacharelado em Ciência da Computação</li> 
+                    <li>Bacharelado em Agronomia</li>
+                   </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Toledo
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                   <ul>
+                    <li>Engenharia Civil</li>
+                    
+                    <li>Engenharia de Computação</li>
+                    
+                    <li>Engenharia de Bioprocessos e Biotecnologia</li>
+                    
+                    <li>Engenharia Eletrônica</li>
+                    
+                    <li>Licenciatura em Matemática</li>
+                    
+                    <li>Tecnologia em Processos Químicos</li>
+                    
+                    <li>Tecnologia em Sistemas para Internet</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Francisco Beltrão
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul><li>Agronomia</li>
+                        
+                        <li>Engenharia Ambiental e Sanitária</li>
+                        
+                        <li>Engenharia de Alimentos</li>
+                        
+                        <li>Engenharia Química</li>
+                        
+                        <li>Licenciatura em Informática</li>
+                        
+                        <li>Sistemas de Informação</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Pato Branco
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul><li>Administração</li>
+                        
+                        <li>Agronomia</li>
+                        
+                        <li>Ciências Contábeis</li>
+                        
+                        <li>Engenharia Cartográfica e de Agrimensura</li>
+                       
+                        <li>Engenharia Civil</li>
+                        
+                        <li>Engenharia de Computação</li>
+                        
+                        <li>Engenharia Elétrica</li>
+                        
+                        <li>Engenharia Mecânica</li>
+                       
+                        <li>Licenciatura em Letras Português e Inglês</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Guarapuava
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul><li>Engenharia Civil</li>
+                        
+                        <li>Engenharia Mecânica</li>
+                        
+                        <li>Engenharia Mecatrônica</li>
+                       
+                        <li>Tecnologia em Sistemas para Internet</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>
+                        Ponta Grossa
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <div class="accordion-body">
+                    <ul><li>Ciência da Computação</li>
+                        
+                        <li>Engenharia de Bioprocessos e Biotecnologia</li>
+                        
+                        <li>Engenharia de Produção</li>
+                        
+                        <li>Engenharia Elétrica</li>
+                       
+                        <li>Engenharia Mecânica</li>
+                        
+                        <li>Engenharia Química</li>
+                        
+                        <li>Licenciatura em Ciências Biológicas</li>
+                        
+                        <li>Tecnologia em Análise e Desenvolvimento de Sistemas</li>
+                        
+                        <li>Tecnologia em Automação Industrial</li></ul>
+                </div>
+            </div>
+            
+            
+        </div>
+    </main>
+    <script src="JavaScript/scriptcursos.js"></script>
+</body>
+</html>
