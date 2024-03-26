@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Navbar responsiva</title>
 </head>
@@ -17,9 +19,9 @@
         <nav class="navbar">
           <a href="/" class="logo">Logo</a>
           <ul class="nav-menu">
-            <li class="nav-item"><a hre="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            <li class="nav-item"><a href="https://www.utfpr.edu.br/" target="_blank" rel="external" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="cursos.html" class="nav-link">Cursos</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Cadastro</a></li>
           </ul>
           <div class="hamburgue" onclick="handleMenu()">
             <div class="logo-2"><i class="fa-solid fa-bars" style="color:rgb(255, 255, 255); font-size: 20px;" ></i></div>
@@ -109,69 +111,75 @@
 
                 </div> <!-- select-group-->
                 <br>
+                
               </div> <!-- depois-scrool -->
 
               <div class="gender-group">
                 
                   <div class="gender-inputs">
-                      <div class="others-labels">
-                          <label for="periodo_estudo">Período de Estudo:</label><br>
-                      </div>
-                      <div class="gender-box">
-                          <div class="gender-input">
-                
-                              <input type="radio" name="periodo_estudo" id="idnoturno">
-                              <label for="idnoturno">Noturno</label>
-                          </div>
-                          <div class="gender-input">
-                
-                              <input type="radio" name="periodo_estudo" id="iddiurno">
-                              <label for="iddiurno">Diurno</label>
-                          </div>
-                          <div class="gender-input">
-                              <input type="radio" name="periodo_estudo" id="idintegral">
-                              <label for="idintegral">Integral</label>
-                          </div>
-                      </div> <!-- gender -box -->
+                     <div>
+                       
+                           <label for="periodo_estudo">Período de Estudo:</label><br>
+                       
+                       <div class="gender-box">
+                           <div class="gender-input">
+                               <input type="radio" name="periodo_estudo" id="idnoturno">
+                               <label for="idnoturno">Noturno</label>
+                           </div>
+                           <div class="gender-input">
+                               <input type="radio" name="periodo_estudo" id="iddiurno">
+                               <label for="iddiurno">Diurno</label>
+                           </div>
+                           <div class="gender-input">
+                               <input type="radio" name="periodo_estudo" id="idintegral">
+                               <label for="idintegral">Integral</label>
+                           </div>
+                       </div> <!-- gender -box -->
+                     </div>
 
-                  </div> <!-- gender-inputs -->
+                 
                   <br>
                 
                 
                     <div>
-                      <div class="others-labels"><label for="meiotransporte">Meios de Transporte</label><br></div>
-                      <div class="gender-box">
-                        <div class="gender-input">
-                          <input type="checkbox" name="meiotransporte" id="idape">
-                          <label for="idape">À pé</label>
-                        </div>
-                        <div class="gender-input">
-                          <input type="checkbox" name="meiotransporte" id="idonibus">
-                          <label for="idonibus">ônibus</label>
-                        </div>
-                        <div class="gender-input">
-                          <input type="checkbox" name="meiotransporte" id="idbicicleta">
-                          <label for="idbicicleta">Bicicleta</label>
-                        </div>
-                        <div class="gender-input">
-                          <input type="checkbox" name="meiotransporte" id="idcarro">
-                          <label for="idcarro">Carro</label>
-                        </div>
-                        <div class="gender-input">
-                          <input type="checkbox" name="meiotransporte" id="idmoto">
-                          <label for="idmoto">Moto</label>
-                        </div>
-                      </div> <!-- gender-box -->
                       
-                                      </div> <!-- gender-group -->
-                                      <br>
+                        <label for="meiotransporte">Meios de Transporte</label><br>
+                        <div class="gender-box">
+                          <div class="gender-input">
+                            <input type="checkbox" name="meiotransporte" id="idape">
+                            <label for="idape">À pé</label>
+                          </div>
+                          <div class="gender-input">
+                            <input type="checkbox" name="meiotransporte" id="idonibus">
+                            <label for="idonibus">ônibus</label>
+                          </div>
+                          <div class="gender-input">
+                            <input type="checkbox" name="meiotransporte" id="idbicicleta">
+                            <label for="idbicicleta">Bicicleta</label>
+                          </div>
+                          <div class="gender-input">
+                            <input type="checkbox" name="meiotransporte" id="idcarro">
+                            <label for="idcarro">Carro</label>
+                          </div>
+                          <div class="gender-input">
+                            <input type="checkbox" name="meiotransporte" id="idmoto">
+                            <label for="idmoto">Moto</label>
+                          </div>
+                        </div> <!-- gender-box -->
                     </div>
+                      
+                      
+                    </div> <!-- gender-inputs -->
+                                      <br>
+                    </div><!-- gender-group -->
               
               <div class="input-box"> <label for="anoentrada">Ano de Entrada na Instituição:</label><br>
                   <div class="input-boxmini"><input type="number" id="anoentrada" name="anoentrada" min="2010" max="2021" required></div>
               </div><br>
-              <button type="button" onclick="limparCampos()">Oh Não! Vou apagar tudo!</button>
-              <button type="submit">Enviar</button>
+              <div class="button-group">
+                <button type="button" onclick="limparCampos()">Oh Não! Vou apagar tudo!</button>
+                <button type="submit">Enviar</button>
+              </div>
           </form>
           <script src="botoes.js"></script>
             
@@ -182,7 +190,7 @@
 
     </main>
 
-<script src="script.js"></script>
+<script src="JavaScript/script.js"></script>
 </body>
 
 </html>
